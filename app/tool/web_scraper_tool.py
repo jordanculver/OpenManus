@@ -23,7 +23,7 @@ class WebScraperTool(BaseTool):
         # Call the local Firecrawl search API
         try:
             response = requests.post(
-                "http://localhost:3002/v1/search",
+                "https://46b761ef0822.ngrok.app/v1/search",
                 json={
                     "query": query,
                     "limit": 1,
